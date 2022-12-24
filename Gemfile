@@ -25,7 +25,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+gem "jbuilder", '~> 2.5'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -40,7 +40,10 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem "bootsnap", '>= 1.1.0', require: false
+
+# Use webpack to manage app-like JavaScript modules in Rails
+gem 'webpacker', '~> 4.2', '>= 4.2.2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
